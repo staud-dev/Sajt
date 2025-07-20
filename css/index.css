@@ -44,7 +44,6 @@ body {
     
 }
 
-/* ----------  HEADER  ---------- */
 .header-glavni {
     position: fixed;
     top: 0;
@@ -86,7 +85,7 @@ body {
             color: var(--site-color-01-hover);
         }
 
-/* ----------  HAMBURGER  ---------- */
+
 .hamburger {
     display: none;
     flex-direction: column;
@@ -102,7 +101,7 @@ body {
         transition: .3s;
     }
 
-/* ----------  SOCIAL  ---------- */
+
 .header-glavni-sm {
     display: flex;
     gap: .75rem;
@@ -158,7 +157,7 @@ body {
         background-size: cover;
     }
 
-/* ----------  MAIN  ---------- */
+
 main {
     margin-top: 80px;
     min-height: calc(100vh - 80px);
@@ -219,7 +218,7 @@ main {
         opacity: 1;
     }
 
-/* ----------  FOOTER  ---------- */
+
 footer {
     background: #215685;
     text-align: center;
@@ -232,7 +231,7 @@ footer {
         font-weight: 600;
     }
 
-/* ----------  MEDIA QUERIES  ---------- */
+
 @media(max-width:768px) {
     .header-glavni-nav {
         position: absolute;
@@ -250,7 +249,7 @@ footer {
         .header-glavni-nav.open {
             max-height: 300px;
         }
-        /* slide-down */
+        
         .header-glavni-nav ul {
             flex-direction: column;
             padding: 1rem 0;
