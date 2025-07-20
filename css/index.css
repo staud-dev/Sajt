@@ -1,4 +1,3 @@
-
 :root {
     --site-color-01: #1ecbe1;
     --site-color-01-hover: #F94A07;
@@ -10,8 +9,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto',sans-serif
+    font-family: 'Roboto', sans-serif;
 }
+
 @font-face {
     font-family: 'Roboto';
     src: url('../font/roboto/static/Roboto_Condensed-ExtraBold.ttf') format('truetype');
@@ -22,7 +22,7 @@
 @font-face {
     font-family: 'Sofia Sans';
     src: url('../font/Sofia_Sans/SofiaSans-ExtraBoldItalic.ttf') format('truetype');
-    font-weight: 100 900; /* varijabilni raspon */
+    font-weight: 100 900;
     font-style: italic;
 }
 
@@ -36,12 +36,12 @@
     src: url('../font/Lobster/EduNSWACTHandPre-VariableFont_wght.ttf') format('truetype');
 }
 
-body {
+html, body {
+    min-width: 100%;
+    overflow-x: hidden;
     background: #1e1e1e;
     color: #fff;
     line-height: 1.4;
-    
-    
 }
 
 .header-glavni {
@@ -68,29 +68,33 @@ body {
         margin-right: 1rem;
     }
 
-.header-glavni-nav ul {
+.header-glavni-nav {
     display: flex;
-    gap: 2rem;
-    list-style: none;
 }
 
-    .header-glavni-nav ul li a {
-        color: #fff;
-        text-decoration: none;
-        font-size: 1.1rem;
-        transition: .3s;
+    .header-glavni-nav ul {
+        display: flex;
+        gap: 2rem;
+        list-style: none;
     }
 
-        .header-glavni-nav ul li a:hover {
-            color: var(--site-color-01-hover);
+        .header-glavni-nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: .3s;
         }
 
+            .header-glavni-nav ul li a:hover {
+                color: var(--site-color-01-hover);
+            }
 
 .hamburger {
     display: none;
     flex-direction: column;
     gap: 5px;
     cursor: pointer;
+    margin-left: auto;
 }
 
     .hamburger span {
@@ -101,7 +105,6 @@ body {
         transition: .3s;
     }
 
-
 .header-glavni-sm {
     display: flex;
     gap: .75rem;
@@ -111,52 +114,32 @@ body {
         width: 40px;
         height: 40px;
         background-size: cover;
-        transition: .4s
+        transition: .4s;
     }
-
 
 .header-glavni-sm-fb {
     background: url(../ico/facecol.png);
-    width:40px; /* keep the same box */
-    height: 40px;
-    background-size: cover;
 }
 
     .header-glavni-sm-fb:hover {
         background: url(../ico/facebl.png);
-        width: 40px; /* keep the same box */
-        height: 40px;
-        background-size: cover;
     }
 
 .header-glavni-sm-in {
     background: url(../ico/icons8-instagram-144.png);
-    width: 40px; /* keep the same box */
-    height: 40px;
-    background-size: cover;
 }
 
     .header-glavni-sm-in:hover {
         background: url(../ico/icons8-instagram-24.png);
-        width: 40px;
-        height: 40px;
-        background-size: cover;
     }
 
 .header-glavni-sm-yt {
     background: url(../ico/youco.png);
-    width: 40px;
-    height: 40px;
-    background-size: cover;
 }
 
     .header-glavni-sm-yt:hover {
         background: url(../ico/youbl.png);
-        width: 40px; 
-        height: 40px;
-        background-size: cover;
     }
-
 
 main {
     margin-top: 80px;
@@ -170,6 +153,12 @@ main {
     flex-wrap: wrap;
 }
 
+.glavno-smanj {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
 .glavni-intro, .main-deo {
     max-width: 500px;
 }
@@ -181,23 +170,24 @@ main {
         text-shadow: 5px 10px 10px var(--site-color-01);
     }
 
-    .glavni-intro p, .glavni-deo p {
+    .glavni-intro p,
+    .glavni-deo p {
         font-size: 1.1rem;
         letter-spacing: 0.05px;
-        color: var( --site-color-01);
-        text-shadow: -1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;
+        color: var(--site-color-01);
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
         line-height: 1.6;
     }
 
-    .glavni-deo p {
-        border-left: 4px solid var(--site-color-01);
-        padding-left: 1rem;
-    }
+.glavni-deo p {
+    border-left: 4px solid var(--site-color-01);
+    padding-left: 1rem;
+}
 
 .drugi-p {
     font-size: 1rem;
     color: var(--site-color-01);
-    text-shadow: -1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .btn {
@@ -218,7 +208,6 @@ main {
         opacity: 1;
     }
 
-
 footer {
     background: #215685;
     text-align: center;
@@ -231,8 +220,11 @@ footer {
         font-weight: 600;
     }
 
+/* ============================ */
+/*     RESPONSIVE STILOVI      */
+/* ============================ */
 
-@media(max-width:1200px) {
+@media (max-width: 1200px) {
     .header-glavni-nav {
         position: absolute;
         top: 80px;
@@ -249,36 +241,31 @@ footer {
         .header-glavni-nav.open {
             max-height: 300px;
         }
-        
+
         .header-glavni-nav ul {
             flex-direction: column;
             padding: 1rem 0;
         }
-
-    .hamburger {
-        display: none;
-        margin-left: auto;
-        cursor: pointer;
-        
-    }
-    @media(max-width:768px) {
-        .hamburger {
-            display: flex
-        }
-    }
 
     main {
         flex-direction: column;
         gap: 2rem;
         text-align: center;
     }
+
     .glavni-intro {
-        margin-top: 160px
+        margin-top: 160px;
     }
-    /* 140 px logo + 20 px gap */
-    @media(max-width:480px) {
-        .glavni-intro {
-            margin-top: 120px
-        }
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+}
+
+@media (max-width: 480px) {
+    .glavni-intro {
+        margin-top: 120px;
     }
 }
