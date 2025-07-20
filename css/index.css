@@ -232,7 +232,7 @@ footer {
     }
 
 
-@media(max-width:768px) {
+@media(max-width:1200px) {
     .header-glavni-nav {
         position: absolute;
         top: 80px;
