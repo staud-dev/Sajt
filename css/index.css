@@ -1,4 +1,4 @@
-﻿/* ----------  VARIABLES & RESET  ---------- */
+
 :root {
     --site-color-01: #1ecbe1;
     --site-color-01-hover: #F94A07;
@@ -138,21 +138,21 @@ body {
 
     .header-glavni-sm-in:hover {
         background: url(../ico/icons8-instagram-24.png);
-        width: 40px; /* keep the same box */
+        width: 40px;
         height: 40px;
         background-size: cover;
     }
 
 .header-glavni-sm-yt {
     background: url(../ico/youco.png);
-    width: 40px; /* keep the same box */
+    width: 40px;
     height: 40px;
     background-size: cover;
 }
 
     .header-glavni-sm-yt:hover {
         background: url(../ico/youbl.png);
-        width: 40px; /* keep the same box */
+        width: 40px; 
         height: 40px;
         background-size: cover;
     }
