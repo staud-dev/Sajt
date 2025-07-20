@@ -1,0 +1,285 @@
+﻿/* ----------  VARIABLES & RESET  ---------- */
+:root {
+    --site-color-01: #1ecbe1;
+    --site-color-01-hover: #F94A07;
+    --site-color-02: #E1341E;
+    --site-color-02-hover: #215685;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('../font/roboto/static/Roboto_Condensed-ExtraBold.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sofia Sans';
+    src: url('../font/Sofia_Sans/SofiaSans-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 100 900; /* varijabilni raspon */
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'EduNSWACTHandPre';
+    src: url('../font/Edu_NSW_ACT_Hand_Pre/EduNSWACTHandPre-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Lobster';
+    src: url('../font/Lobster/EduNSWACTHandPre-VariableFont_wght.ttf') format('truetype');
+}
+
+body {
+    background: #1e1e1e;
+    color: #fff;
+    line-height: 1.4;
+    
+    
+}
+
+/* ----------  HEADER  ---------- */
+.header-glavni {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background: #215685;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    z-index: 1000;
+}
+
+.header-glavni-logo {
+    display: flex;
+    align-items: center;
+}
+
+    .header-glavni-logo img {
+        height: 60px;
+        margin-right: 1rem;
+    }
+
+.header-glavni-nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+    .header-glavni-nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.1rem;
+        transition: .3s;
+    }
+
+        .header-glavni-nav ul li a:hover {
+            color: var(--site-color-01-hover);
+        }
+
+/* ----------  HAMBURGER  ---------- */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+    .hamburger span {
+        width: 30px;
+        height: 4px;
+        background: #fff;
+        border-radius: 2px;
+        transition: .3s;
+    }
+
+/* ----------  SOCIAL  ---------- */
+.header-glavni-sm {
+    display: flex;
+    gap: .75rem;
+}
+
+    .header-glavni-sm a div {
+        width: 40px;
+        height: 40px;
+        background-size: cover;
+        transition: .4s
+    }
+
+
+.header-glavni-sm-fb {
+    background: url(../ico/facecol.png);
+    width:40px; /* keep the same box */
+    height: 40px;
+    background-size: cover;
+}
+
+    .header-glavni-sm-fb:hover {
+        background: url(../ico/facebl.png);
+        width: 40px; /* keep the same box */
+        height: 40px;
+        background-size: cover;
+    }
+
+.header-glavni-sm-in {
+    background: url(../ico/icons8-instagram-144.png);
+    width: 40px; /* keep the same box */
+    height: 40px;
+    background-size: cover;
+}
+
+    .header-glavni-sm-in:hover {
+        background: url(../ico/icons8-instagram-24.png);
+        width: 40px; /* keep the same box */
+        height: 40px;
+        background-size: cover;
+    }
+
+.header-glavni-sm-yt {
+    background: url(../ico/youco.png);
+    width: 40px; /* keep the same box */
+    height: 40px;
+    background-size: cover;
+}
+
+    .header-glavni-sm-yt:hover {
+        background: url(../ico/youbl.png);
+        width: 40px; /* keep the same box */
+        height: 40px;
+        background-size: cover;
+    }
+
+/* ----------  MAIN  ---------- */
+main {
+    margin-top: 80px;
+    min-height: calc(100vh - 80px);
+    background: url(../slike/rus.png) center 20px / 140px auto no-repeat, url(../slike/peloid-banja-rusanda-00003-768x512.jpg) center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20rem;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+
+.glavni-intro, .main-deo {
+    max-width: 500px;
+}
+
+    .glavni-intro h1 {
+        font-size: 3rem;
+        font-family: 'Sofia Sans', sans-serif;
+        color: var(--site-color-02);
+        text-shadow: 5px 10px 10px var(--site-color-01);
+    }
+
+    .glavni-intro p, .glavni-deo p {
+        font-size: 1.1rem;
+        letter-spacing: 0.05px;
+        color: var( --site-color-01);
+        text-shadow: -1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;
+        line-height: 1.6;
+    }
+
+    .glavni-deo p {
+        border-left: 4px solid var(--site-color-01);
+        padding-left: 1rem;
+    }
+
+.drugi-p {
+    font-size: 1rem;
+    color: var(--site-color-01);
+    text-shadow: -1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;
+}
+
+.btn {
+    display: block;
+    width: fit-content;
+    margin-top: 1rem;
+    padding: .75rem 2rem;
+    font-size: 1.2rem;
+    background: var(--site-color-01);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    opacity: .5;
+    transition: .3s;
+}
+
+    .btn:hover {
+        opacity: 1;
+    }
+
+/* ----------  FOOTER  ---------- */
+footer {
+    background: #215685;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+    footer h3 {
+        font-family: 'EduNSWACTHandPre', sans-serif;
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
+
+/* ----------  MEDIA QUERIES  ---------- */
+@media(max-width:768px) {
+    .header-glavni-nav {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        background: #215685;
+        flex-direction: column;
+        align-items: center;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height .4s ease;
+    }
+
+        .header-glavni-nav.open {
+            max-height: 300px;
+        }
+        /* slide-down */
+        .header-glavni-nav ul {
+            flex-direction: column;
+            padding: 1rem 0;
+        }
+
+    .hamburger {
+        display: none;
+        margin-left: auto;
+        cursor: pointer;
+        
+    }
+    @media(max-width:768px) {
+        .hamburger {
+            display: flex
+        }
+    }
+
+    main {
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+    }
+    .glavni-intro {
+        margin-top: 160px
+    }
+    /* 140 px logo + 20 px gap */
+    @media(max-width:480px) {
+        .glavni-intro {
+            margin-top: 120px
+        }
+    }
+}

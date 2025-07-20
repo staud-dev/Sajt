@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SBRusanda</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="font/">
+
+</head>
+
+
+
+<body >
+    <div class="glavno-smanj">
+        <header class="header-glavni">
+
+            <div class="header-glavni-logo">
+                <img src="slike/logo.png" alt="Rusanda">
+
+                <nav class="header-glavni-nav" id="nav-menu">
+                    <ul>
+                        <li><a href="index.html">ПОЧЕТНА</a></li>
+                        <li><a href="#">ГАЛЕРИЈА</a></li>
+                        <li><a href="#">О НАМА</a></li>
+                        <li><a href="#">КОНТАКТ</a></li>
+                    </ul>
+                </nav>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+            </div>
+
+            <div class="header-glavni-sm">
+                <a href="www.facebook.com"><div class="header-glavni-sm-fb"></div></a>
+                <a href="www.instagram.com"><div class="header-glavni-sm-in"></div></a>
+                <a href="www.youtube.com"><div class="header-glavni-sm-yt"></div></a>
+
+
+            </div>
+
+        </header>
+
+        <main>
+            <div class="glavni-intro">
+                <h1>Добродошли <br>на странице<br> Бање Русанде</h1>
+                <p>
+                    Специјална болница за рехабилитацију "Бања Русанда" <br>се налази на обали <br>
+                    највећег сланог језера у Србији,<br> у једном шумоликом парку у Банату, <br>
+                    богатом флором и фауном.
+                </p>
+                <button class="btn">Контактирајте нас</button>
+            </div>
+
+            <div class="glavni-deo">
+                <p>
+                    Физикална профилакса/превенција је област <br>физикалне медицине и представлја поступак <br>
+                    коришћења различитих облика физикалних агенса <br> у циљу унапређења здрављаa, <br>
+                    превенцији настајаља болести и повреда. <br><br> ---СБ Бања Русанда
+                </p><br><br>
+                <p class="drugi-p">
+                    Пелоид је лековито блато<br> и предаставља житку и лепљиву<br> смесу са лековитим својствима.
+                    <br> Лековитост потиче од соли, биостимулатора и гасова. <br>Настаје таложењењем органских и неорганских материјала <br>који су у некој фази разградње<br><br>---СБ БањаРусанда
+                </p>
+            </div>
+
+        </main>
+
+        <footer>
+
+            <div class="futer">
+
+                <h3><p>&copy; 2025 Бања Русанда. Сва права задржана</p><</h3>
+
+            </div>
+
+        </footer>
+    </div>
+    <script>
+        document.getElementById('hamburger').addEventListener('click', () => {
+            document.getElementById('nav-menu').classList.toggle('open');
+        });
+    </script>
+</body>
+
+</html>
