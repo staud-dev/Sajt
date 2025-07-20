@@ -119,26 +119,56 @@ html, body {
 
 .header-glavni-sm-fb {
     background: url(../ico/facecol.png);
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
     .header-glavni-sm-fb:hover {
         background: url(../ico/facebl.png);
+        width: 40px;
+        height: 40px;
+        background-repeat: no-repeat;
+        background-size: cover;
+
     }
 
 .header-glavni-sm-in {
     background: url(../ico/icons8-instagram-144.png);
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
     .header-glavni-sm-in:hover {
         background: url(../ico/icons8-instagram-24.png);
+        width: 40px;
+       height: 40px;
+       background-repeat: no-repeat;
+       background-size: cover;
+
     }
 
 .header-glavni-sm-yt {
     background: url(../ico/youco.png);
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
     .header-glavni-sm-yt:hover {
         background: url(../ico/youbl.png);
+        width: 40px;
+        height: 40px;
+        background-repeat: no-repeat;
+         background-size: cover;
+
     }
 
 main {
@@ -220,9 +250,6 @@ footer {
         font-weight: 600;
     }
 
-/* ============================ */
-/*     RESPONSIVE STILOVI      */
-/* ============================ */
 
 @media (max-width: 1200px) {
     .header-glavni-nav {
